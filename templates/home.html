@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Careers </title>
+  <style>
+    #banner{
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="text-center mt-2 mb-4" >{{company_name}} Careers</h1>
+  <img 
+ id='banner' src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=869&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="None">
+  <h2 class="text-center mt-2 mb-4">About RC Careers</h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas modi eaque molestias, distinctio ipsum qui amet, non nisi sed labore ipsam sequi. Dolorum ab necessitatibus, deleniti quasi neque repellat.
+  Asperiores quasi obcaecati harum. Vero expedita laborum unde non amet rerum iusto nostrum, maiores reiciendis reprehenderit est cum consectetur commodi a quibusdam fuga et sunt molestias voluptas dicta porro mollitia?
+  Laudantium consectetur quae voluptatibus eum obcaecati pariatur, temporibus quod rpx;epellendus harum eligendi soluta, non libero minima reprehenderit quibusdam vitae numquam molestiae provident quam voluptatem earum. Modi ullam nam blanditiis in.</p>
+  <h2 class="text-center">Open Positions</h2>
+  <p >
+    {% for job in jobs %}
+    {%include 'jobitem.html' %}
+    {% endfor %}
+  </p>
+    <div class="text-center">
+  <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-4">Copyright 2023 RC</p>
+      </div>
+    </div>
+</body>
+</html>
